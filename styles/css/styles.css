@@ -66,3 +66,16 @@ img {
 .footer__img,
 .footer__content {
   float: left; }
+
+.footer__share button {
+  border: none; }
+  .footer__share button:hover {
+    cursor: pointer; }
+
+.footer__share .wrapper {
+  background-color: #eef1f6;
+  padding: 10px;
+  border-radius: 50%; }
+
+.footer__share img {
+  width: 25px; }

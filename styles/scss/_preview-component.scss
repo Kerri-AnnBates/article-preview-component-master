@@ -48,3 +48,23 @@
 .footer__content {
 	float: left;
 }
+
+.footer__share {
+	button {
+		border: none;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.wrapper {
+		background-color: $lightGray;
+		padding: 10px;
+		border-radius: 50%;
+	}
+
+	img {
+		width: 25px;
+	}
+}
