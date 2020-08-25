@@ -1,0 +1,50 @@
+.preview-component {
+	max-width: 400px;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+// component image
+.main__img {
+	overflow: hidden;
+	height: 250px;
+
+	img {
+		border-radius: 10px 10px 0 0;
+	}
+}
+
+// main component content
+.main__content {
+	padding: 30px;
+	color: $DarkGrayishBlue;
+	line-height: 1.5;
+}
+
+.main__heading {
+	margin-bottom: 15px;
+}
+
+// Footer
+.footer {
+	padding: 0 30px 30px 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__img {
+	img {
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+	}
+}
+
+.footer__content {
+	padding-left: 20px;
+}
+
+.footer__img,
+.footer__content {
+	float: left;
+}
