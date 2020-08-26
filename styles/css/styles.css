@@ -97,7 +97,10 @@ img {
   justify-content: space-between;
   align-items: center;
   border-radius: 0 0 10px 10px;
-  padding: 20px; }
+  padding: 20px;
+  display: none; }
+  .footer__share-more.show {
+    display: flex; }
 
 .footer__social img {
   width: 25px;
