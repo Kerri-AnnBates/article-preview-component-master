@@ -60,11 +60,14 @@ img {
   height: 60px;
   border-radius: 50%; }
 
-.footer__content {
+.footer__content,
+.footer__social {
   padding-left: 20px; }
 
 .footer__img,
-.footer__content {
+.footer__content,
+.footer__share-more__text,
+.footer__social {
   float: left; }
 
 .footer__share button {
@@ -79,3 +82,23 @@ img {
 
 .footer__share img {
   width: 25px; }
+
+.footer__share--active .wrapper {
+  background-color: #6d7f97; }
+
+.footer__share-more {
+  background-color: #48556a;
+  color: #9eafc2;
+  font-weight: 300;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+  padding: 20px; }
+
+.footer__social img {
+  width: 25px;
+  margin-right: 10px; }

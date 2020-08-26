@@ -40,12 +40,15 @@
 	}
 }
 
-.footer__content {
+.footer__content,
+.footer__social {
 	padding-left: 20px;
 }
 
 .footer__img,
-.footer__content {
+.footer__content,
+.footer__share-more__text,
+.footer__social {
 	float: left;
 }
 
@@ -66,5 +69,32 @@
 
 	img {
 		width: 25px;
+	}
+}
+
+.footer__share--active {
+	.wrapper {
+		background-color: $DarkBlue;
+	}
+}
+
+.footer__share-more {
+	background-color: $DarkGrayishBlue;
+	color: $GrayishBlue;
+	font-weight: 300;
+	font-size: 1.125rem;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 0 0 10px 10px;
+	padding: 20px;
+}
+
+.footer__social {
+	img {
+		width: 25px;
+		margin-right: 10px;
 	}
 }
