@@ -2,6 +2,18 @@
 	max-width: 400px;
 	background-color: #fff;
 	border-radius: 10px;
+
+	@media (min-width: $DesktopSize) {
+		max-width: 800px;
+	}
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	@media (min-width: $DesktopSize) {
+		flex-direction: row;
+	}
 }
 
 // component image
@@ -9,8 +21,24 @@
 	overflow: hidden;
 	height: 250px;
 
+	@media (min-width: $DesktopSize) {
+		position: relative;
+		height: auto;
+		width: 100%;
+		border-radius: 10px 0 0 10px;
+	}
+
 	img {
 		border-radius: 10px 10px 0 0;
+
+		@media (min-width: $DesktopSize) {
+			position: absolute;
+			top: 50%;
+			left: 60%;
+			transform: translate(-50%, -50%);
+			max-width: none;
+			height: 100%;
+		}
 	}
 }
 
@@ -27,7 +55,8 @@
 
 // Footer
 .footer {
-	padding: 0 30px 30px 30px;
+	// padding: 0 30px 30px 30px;
+	padding-top: 30px;
 	display: flex;
 	justify-content: space-between;
 }

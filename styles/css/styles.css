@@ -35,12 +35,36 @@ img {
   max-width: 400px;
   background-color: #fff;
   border-radius: 10px; }
+  @media (min-width: 800px) {
+    .preview-component {
+      max-width: 800px; } }
+
+.main {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 800px) {
+    .main {
+      flex-direction: row; } }
 
 .main__img {
   overflow: hidden;
   height: 250px; }
+  @media (min-width: 800px) {
+    .main__img {
+      position: relative;
+      height: auto;
+      width: 100%;
+      border-radius: 10px 0 0 10px; } }
   .main__img img {
     border-radius: 10px 10px 0 0; }
+    @media (min-width: 800px) {
+      .main__img img {
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        max-width: none;
+        height: 100%; } }
 
 .main__content {
   padding: 30px;
@@ -51,7 +75,7 @@ img {
   margin-bottom: 15px; }
 
 .footer {
-  padding: 0 30px 30px 30px;
+  padding-top: 30px;
   display: flex;
   justify-content: space-between; }
 
