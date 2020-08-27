@@ -65,17 +65,15 @@
 	justify-content: space-between;
 }
 
-.footer__img {
-	img {
-		width: 60px;
-		height: 60px;
-		border-radius: 50%;
-	}
+.footer .group > img {
+	width: 50px;
+	border-radius: 50%;
+	float: left;
 }
 
 .footer__content,
 .footer__social {
-	padding-left: 20px;
+	margin-left: 20px;
 }
 
 .footer__img,
@@ -85,14 +83,22 @@
 	float: left;
 }
 
+#share-btn {
+	z-index: 1;
+}
+
 .footer__share {
 	button {
 		border: none;
 		background-color: $lightGray;
 		padding: 10px;
 		border-radius: 50%;
+
 		&:hover {
 			cursor: pointer;
+		}
+		&.show {
+			background-color: $DarkBlue;
 		}
 	}
 
@@ -103,7 +109,7 @@
 
 .footer__share--active {
 	button {
-		background-color: $DarkBlue;
+		background-color: transparent;
 
 		@media (min-width: $DesktopSize) {
 			display: none;

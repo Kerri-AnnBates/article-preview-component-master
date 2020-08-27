@@ -82,20 +82,23 @@ img {
   display: flex;
   justify-content: space-between; }
 
-.footer__img img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%; }
+.footer .group > img {
+  width: 50px;
+  border-radius: 50%;
+  float: left; }
 
 .footer__content,
 .footer__social {
-  padding-left: 20px; }
+  margin-left: 20px; }
 
 .footer__img,
 .footer__content,
 .footer__share-more__text,
 .footer__social {
   float: left; }
+
+#share-btn {
+  z-index: 1; }
 
 .footer__share button {
   border: none;
@@ -104,12 +107,14 @@ img {
   border-radius: 50%; }
   .footer__share button:hover {
     cursor: pointer; }
+  .footer__share button.show {
+    background-color: #6d7f97; }
 
 .footer__share img {
   width: 25px; }
 
 .footer__share--active button {
-  background-color: #6d7f97; }
+  background-color: transparent; }
   @media (min-width: 800px) {
     .footer__share--active button {
       display: none; } }
