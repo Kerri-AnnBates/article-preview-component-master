@@ -69,7 +69,8 @@ img {
 .main__content {
   padding: 30px;
   color: #48556a;
-  line-height: 1.5; }
+  line-height: 1.5;
+  position: relative; }
 
 .main__heading {
   margin-bottom: 15px; }
@@ -109,6 +110,9 @@ img {
 
 .footer__share--active .wrapper {
   background-color: #6d7f97; }
+  @media (min-width: 800px) {
+    .footer__share--active .wrapper {
+      display: none; } }
 
 .footer__share-more {
   background-color: #48556a;
@@ -121,10 +125,25 @@ img {
   justify-content: space-between;
   align-items: center;
   border-radius: 0 0 10px 10px;
-  padding: 20px;
-  display: none; }
+  padding: 20px; }
+  @media (min-width: 800px) {
+    .footer__share-more {
+      position: absolute;
+      right: -75px;
+      bottom: 115px;
+      border-radius: 10px; } }
   .footer__share-more.show {
     display: flex; }
+  @media (min-width: 800px) {
+    .footer__share-more::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -15px;
+      border-width: 15px;
+      border-style: solid;
+      border-color: #48556a transparent transparent transparent; } }
 
 .footer__social img {
   width: 25px;

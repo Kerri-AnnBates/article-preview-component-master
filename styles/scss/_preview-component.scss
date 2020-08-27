@@ -47,6 +47,7 @@
 	padding: 30px;
 	color: $DarkGrayishBlue;
 	line-height: 1.5;
+	position: relative;
 }
 
 .main__heading {
@@ -104,6 +105,10 @@
 .footer__share--active {
 	.wrapper {
 		background-color: $DarkBlue;
+
+		@media (min-width: $DesktopSize) {
+			display: none;
+		}
 	}
 }
 
@@ -119,10 +124,30 @@
 	align-items: center;
 	border-radius: 0 0 10px 10px;
 	padding: 20px;
-	display: none;
+	// display: none;
+
+	@media (min-width: $DesktopSize) {
+		position: absolute;
+		right: -75px;
+		bottom: 115px;
+		border-radius: 10px;
+	}
 
 	&.show {
 		display: flex;
+	}
+
+	&::after {
+		@media (min-width: $DesktopSize) {
+			content: "";
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			margin-left: -15px;
+			border-width: 15px;
+			border-style: solid;
+			border-color: $DarkGrayishBlue transparent transparent transparent;
+		}
 	}
 }
 
