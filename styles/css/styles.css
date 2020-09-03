@@ -77,6 +77,9 @@ img {
 .main__heading {
   margin-bottom: 15px; }
 
+.main__text-content {
+  color: #6d7f97; }
+
 .footer {
   padding: 20px 30px;
   display: flex;
@@ -159,3 +162,10 @@ img {
 .footer__social img {
   width: 25px;
   margin-right: 10px; }
+
+.footer__profile-name {
+  font-weight: 700; }
+
+.footer__date {
+  color: #9eafc2;
+  font-size: 0.875rem; }
